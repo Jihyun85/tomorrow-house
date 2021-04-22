@@ -1,5 +1,5 @@
 files:
-  include: "**/*.scss"
+  include: '**/*.scss'
 options:
   formatter: stylish
   merge-default-rules: false
@@ -28,7 +28,7 @@ rules:
   force-pseudo-nesting: 0
   hex-length:
     - 1
-    - style: short
+    - style: long
   hex-notation:
     - 1
     - style: lowercase
