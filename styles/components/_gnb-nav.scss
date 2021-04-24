@@ -1,17 +1,26 @@
 .gnb-nav {
+  $padding: 8px;
+
   &-list {
     @include flexbox(start);
+    margin-left: -#{$padding};
   }
 
   &-item {
-    margin-right: 24px;
+    margin-right: 24px - ($padding * 2);
+    transition: color 200ms ease-in-out;
 
-    &:last-child {
-      margin-right: 0;
+    &:hover,
+    &.is-active {
+      a {
+        color: $blue;
+      }
     }
 
     a {
       @include text-style(18, $primary);
+      display: block;
+      padding: $padding;
       font-weight: 700;
     }
   }
