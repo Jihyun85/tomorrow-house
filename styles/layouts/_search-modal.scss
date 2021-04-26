@@ -8,18 +8,22 @@
   padding: 12px 0;
   background-color: $white;
 
+  &-header {
+    margin-bottom: 20px;
+  }
+
   &-form {
     @include flexbox(between);
 
     .input-group {
       flex-grow: 1;
       margin-right: 8px;
+    }
 
-      .btn-ghost {
-        flex-grow: 0;
-        flex-shrink: 0;
-        width: 56px;
-      }
+    .btn-ghost {
+      flex-grow: 0;
+      flex-shrink: 0;
+      min-width: 56px;
     }
   }
 }
