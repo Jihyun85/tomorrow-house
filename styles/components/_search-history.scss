@@ -24,6 +24,13 @@
 
   &-item {
     position: relative;
+    overflow-y: auto;
+    border-radius: 2px;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      background-color: $background;
+    }
 
     .word-button {
       @include text-style(16, $primary);
@@ -42,6 +49,10 @@
       height: $close-button-size;
       font-size: 16px;
       color: $tertiary;
+
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }
