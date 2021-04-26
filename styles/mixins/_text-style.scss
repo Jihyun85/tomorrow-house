@@ -38,6 +38,9 @@
   @if ($size == 12) {
     @include text-style-12;
   }
+  @if ($size == 13) {
+    @include text-style-13;
+  }
   @if ($size == 14) {
     @include text-style-14;
   }
